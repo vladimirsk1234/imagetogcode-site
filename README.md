@@ -8,6 +8,6 @@ About, Privacy Policy, Support, and Terms for Apple App Store and Google Play.
 - https://vladimirsk1234.github.io/imagetogcode-site/support.html
 - https://vladimirsk1234.github.io/imagetogcode-site/terms.html
 
-Support email: imagetogcode@gmail.com
+Support email: iMagetoGcode@Gmail.com
 
 Public website only — no application source code.
