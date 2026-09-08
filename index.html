@@ -3,42 +3,90 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>iMage-to-Gcode — Photo to CNC G-code</title>
-    <meta
-      name="description"
-      content="Turn a photo into a CNC toolpath. Prepare the image, generate G-code, preview the cut, and share the file — on your phone."
-    />
+    <title>iMage-to-Gcode — Photo to CNC G-code on Your Phone</title>
+    <meta name="description" content="Turn a photo into CNC G-code on your phone. Prepare, generate, preview, and share — on device. Privacy-first toolpath app for shops and makers." />
+    <meta name="author" content="Vladimir Skliar" />
+    <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://vladimirsk1234.github.io/imagetogcode-site/" />
+    <meta property="og:site_name" content="iMage-to-Gcode" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="iMage-to-Gcode — Photo to CNC G-code" />
-    <meta
-      property="og:description"
-      content="Take or choose a photo, prepare it, generate a CNC toolpath, preview the cut, and share the file."
-    />
+    <meta property="og:title" content="iMage-to-Gcode — Photo to CNC G-code on Your Phone" />
+    <meta property="og:description" content="Turn a photo into CNC G-code on your phone. Prepare, generate, preview, and share — on device. Privacy-first toolpath app for shops and makers." />
     <meta property="og:url" content="https://vladimirsk1234.github.io/imagetogcode-site/" />
     <meta property="og:image" content="https://vladimirsk1234.github.io/imagetogcode-site/assets/og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="iMage-to-Gcode — photo to CNC G-code" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="iMage-to-Gcode — Photo to CNC G-code" />
-    <meta
-      name="twitter:description"
-      content="Take or choose a photo, prepare it, generate a CNC toolpath, preview the cut, and share the file."
-    />
+    <meta name="twitter:title" content="iMage-to-Gcode — Photo to CNC G-code on Your Phone" />
+    <meta name="twitter:description" content="Turn a photo into CNC G-code on your phone. Prepare, generate, preview, and share — on device. Privacy-first toolpath app for shops and makers." />
+    <meta name="twitter:image" content="https://vladimirsk1234.github.io/imagetogcode-site/assets/og.jpg" />
     <meta name="theme-color" content="#0a0b0d" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MobileApplication",
+          "name": "iMage-to-Gcode",
+          "alternateName": ["iMAGEtoGcode", "Image to G-code"],
+          "url": "https://vladimirsk1234.github.io/imagetogcode-site/",
+          "description": "Turn a photo into CNC G-code on your phone. Prepare the image, generate a toolpath, preview the cut, and share the file. Work stays on your device.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "iOS, Android",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+          "author": {"@type": "Person", "name": "Vladimir Skliar"},
+          "email": "iMagetoGcode@Gmail.com",
+          "image": "https://vladimirsk1234.github.io/imagetogcode-site/assets/og.jpg"
+        },
+        {
+          "@type": "WebSite",
+          "name": "iMage-to-Gcode",
+          "url": "https://vladimirsk1234.github.io/imagetogcode-site/",
+          "publisher": {"@type": "Person", "name": "Vladimir Skliar", "email": "iMagetoGcode@Gmail.com"}
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does iMage-to-Gcode do?",
+              "acceptedAnswer": {"@type": "Answer", "text": "It turns a photo into CNC G-code on your phone: prepare the image, generate a toolpath, preview the cut, then share the file."}
+            },
+            {
+              "@type": "Question",
+              "name": "Do my photos leave my phone?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Photos and projects stay on your device. A file leaves the app only if you tap Share and choose where to send it."}
+            },
+            {
+              "@type": "Question",
+              "name": "What is Sculpting vs Contour?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Sculpting carves the picture as a surface. Contour follows the outlines."}
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get support?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Email iMagetoGcode@Gmail.com. We aim to reply within a few business days."}
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="brand" href="index.html">
-          <img src="assets/logo.png" width="36" height="36" alt="" />
+          <img src="assets/logo.png" width="36" height="36" alt="iMage-to-Gcode logo" />
           <span class="brand-name">
             <strong>iMage-to-Gcode</strong>
-            <span>Photo to toolpath</span>
+            <span>Photo to CNC G-code</span>
           </span>
         </a>
         <nav class="nav" aria-label="Primary">
@@ -52,12 +100,12 @@
     <main id="main">
       <section class="wrap hero">
         <div>
-          <p class="kicker">Photo → CNC G-code</p>
-          <h1>From a picture to a toolpath.</h1>
+          <p class="kicker">CNC · Photo · G-code</p>
+          <h1>Photo in. Toolpath out.</h1>
           <p class="lede">
-            iMage-to-Gcode is for machinists and hobbyists who want a simple path from a
-            photo to a file the machine can run. Take or choose a picture, prepare it,
-            generate G-code, preview the cut, then share the file.
+            iMage-to-Gcode turns a picture into CNC G-code on your phone — prepare the
+            image, generate the path, preview the cut, then share the file. Built for
+            shops and makers who want a fast, private workflow.
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="privacy.html">Privacy Policy</a>
@@ -71,7 +119,7 @@
               src="assets/app-icon-256.png"
               width="512"
               height="512"
-              alt="iMage-to-Gcode app icon: a metal block being engraved on a CNC bed"
+              alt="iMage-to-Gcode app icon showing CNC engraving from a photo"
             />
           </picture>
           <span class="stamp">On your device</span>
@@ -80,89 +128,78 @@
 
       <section class="wrap section" aria-labelledby="how-heading">
         <h2 id="how-heading">How it works</h2>
-        <p class="section-lead">
-          A short shop-floor loop. Nothing here requires an account.
-        </p>
+        <p class="section-lead">Four clear steps. No account required.</p>
         <div class="steps">
           <article class="step">
-            <p class="step-num">01 · Photo</p>
-            <h3>Take or choose a picture</h3>
-            <p>Use the camera or pick an image from your library — a sketch, a logo, or a part photo.</p>
+            <p class="step-num">01 · Capture</p>
+            <h3>Take or choose a photo</h3>
+            <p>Camera or library — logos, sketches, or part photos.</p>
           </article>
           <article class="step">
             <p class="step-num">02 · Prepare</p>
-            <h3>Clean up what will be cut</h3>
-            <p>Crop, adjust contrast, invert, and set the workpiece size so the picture matches the job.</p>
+            <h3>Fit the job</h3>
+            <p>Crop, contrast, invert, and set workpiece size.</p>
           </article>
           <article class="step">
-            <p class="step-num">03 · Mode</p>
-            <h3>Sculpting or Contour</h3>
-            <p>Sculpting fills the image as a carved surface. Contour follows the outlines.</p>
+            <p class="step-num">03 · Generate</p>
+            <h3>Build G-code</h3>
+            <p>Sculpting for relief, Contour for outlines — then preview.</p>
           </article>
           <article class="step">
-            <p class="step-num">04 · Generate</p>
-            <h3>Make the G-code</h3>
-            <p>The app builds a CNC toolpath from the prepared picture, on the phone.</p>
-          </article>
-          <article class="step">
-            <p class="step-num">05 · Preview</p>
-            <h3>Watch the path first</h3>
-            <p>Play a simulation of the cut so you can review the motion before you share the file.</p>
-          </article>
-          <article class="step">
-            <p class="step-num">06 · Share</p>
+            <p class="step-num">04 · Share</p>
             <h3>Send the file</h3>
-            <p>Share the G-code through the system share sheet — Files, Drive, AirDrop, or mail.</p>
+            <p>Share only when you choose — Files, Drive, AirDrop, or email.</p>
           </article>
         </div>
       </section>
 
       <section class="wrap section" aria-labelledby="modes-heading">
-        <h2 id="modes-heading">Two ways to cut</h2>
-        <p class="section-lead">Pick the style that matches the job. You can switch and generate again.</p>
+        <h2 id="modes-heading">Two cut styles</h2>
+        <p class="section-lead">Match the path to the job. Switch and generate again anytime.</p>
         <div class="modes">
           <article class="mode">
             <p class="mode-kicker">Sculpting</p>
             <h3>Carve the picture</h3>
-            <p>
-              Use Sculpting when you want the image itself — shaded areas become the
-              machined surface, like a relief or engraved plate.
-            </p>
+            <p>Best for reliefs and engraved plates — the image becomes the surface.</p>
           </article>
           <article class="mode">
             <p class="mode-kicker">Contour</p>
-            <h3>Follow the outlines</h3>
-            <p>
-              Use Contour when the edges matter — the toolpath traces the shapes in the
-              photo instead of filling them.
-            </p>
+            <h3>Trace the outlines</h3>
+            <p>Best when edges matter — the tool follows the shapes in the photo.</p>
           </article>
         </div>
       </section>
 
-      <section class="wrap section" aria-labelledby="more-heading">
-        <h2 id="more-heading">Also in the app</h2>
+      <section class="wrap section" aria-labelledby="why-heading">
+        <h2 id="why-heading">Why makers use it</h2>
         <div class="features">
           <article class="feature">
-            <h3>Recents</h3>
-            <p>
-              Finished jobs stay on the phone so you can open them again, replay the
-              preview, or share the file. Delete a recent whenever you want.
-            </p>
+            <h3>Private by design</h3>
+            <p>Photos and projects stay on your device. Nothing uploads unless you Share.</p>
           </article>
           <article class="feature">
-            <h3>Share when you choose</h3>
-            <p>
-              Nothing is sent anywhere unless you tap Share and pick a destination. The
-              file leaves the app only through that step.
-            </p>
+            <h3>Recents on hand</h3>
+            <p>Reopen past jobs, replay the preview, or share again. Delete anytime.</p>
           </article>
         </div>
         <p class="note">
-          Photos, settings, and recent jobs stay on your device. See the
-          <a href="privacy.html">Privacy Policy</a> for details, or
-          <a href="support.html">contact support</a> if you need help.
+          Read the <a href="privacy.html">Privacy Policy</a> or
+          <a href="support.html">contact support</a> — iMagetoGcode@Gmail.com.
         </p>
+      </section>
+
+      <section class="wrap section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">FAQ</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>Do I need an account?</h3>
+            <p>No. Core use works without sign-in.</p>
+          </article>
+          <article class="feature">
+            <h3>Is the preview safe to run?</h3>
+            <p>Preview is a guide. Always prove the path on the machine before cutting.</p>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -177,7 +214,6 @@
           <a href="privacy.html">Privacy</a>
           <a href="support.html">Support</a>
           <a href="terms.html">Terms</a>
-          <a href="https://github.com/vladimirsk1234/iMAGEtoGcode">GitHub</a>
         </nav>
       </div>
     </footer>

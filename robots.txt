@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vladimirsk1234.github.io/imagetogcode/
+Sitemap: https://vladimirsk1234.github.io/imagetogcode-site/sitemap.xml
