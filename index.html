@@ -25,7 +25,8 @@
     <meta name="theme-color" content="#0a0b0d" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=mobile2" />
+    <link rel="stylesheet" href="styles.css?v=tips1" />
+    <script src="site.js?v=tips1" defer></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -156,51 +157,230 @@
 
       <section class="wrap section" aria-labelledby="look-heading">
         <h2 id="look-heading">How it looks</h2>
-        <p class="section-lead">Real screens from the app. Short notes on what each one is for.</p>
+        <p class="section-lead">Tap a glowing dot or a chip — or hit <strong>Play tip tour</strong> for a short guided walkthrough of every control.</p>
         <div class="shots">
-          <figure class="shot">
-            <img src="assets/shots/01-home.jpg" width="390" height="844" alt="Home screen with Take Photo, Choose Photo, and Recents" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Home</strong>
-              Start here. Take a photo or pick one from the library. Recents keep past jobs ready to reopen.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/01-home.jpg" width="390" height="844" alt="Home screen with Take Photo, Choose Photo, and Recents" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:88%;top:5%" data-tip-id="h-new" aria-label="New project">1</button>
+              <button type="button" class="hotspot" style="left:12%;top:12%" data-tip-id="h-set" aria-label="Settings">2</button>
+              <button type="button" class="hotspot" style="left:50%;top:48%" data-tip-id="h-take" aria-label="Take Photo">3</button>
+              <button type="button" class="hotspot" style="left:50%;top:56%" data-tip-id="h-choose" aria-label="Choose Photo">4</button>
+              <button type="button" class="hotspot" style="left:22%;top:82%" data-tip-id="h-recent" aria-label="Recents">5</button>
+              <button type="button" class="hotspot" style="left:30%;top:72%" data-tip-id="h-del" aria-label="Delete recent">6</button>
+            </div>
+            <figcaption><strong>Home</strong> Empty start — bring in a photo or reopen a job.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="h-new">+</button>
+                <button type="button" class="chip" data-tip-id="h-set">Settings</button>
+                <button type="button" class="chip" data-tip-id="h-take">Take Photo</button>
+                <button type="button" class="chip" data-tip-id="h-choose">Choose Photo</button>
+                <button type="button" class="chip" data-tip-id="h-recent">Recents</button>
+                <button type="button" class="chip" data-tip-id="h-del">Delete ×</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="h-new"><strong>+</strong> Start a fresh job. Clears the workspace so you can load a new photo.</div>
+              <div class="tip-copy" data-tip-id="h-set"><strong>Settings (gear)</strong> App-level options. Rare stuff — not the everyday CNC knobs.</div>
+              <div class="tip-copy" data-tip-id="h-take"><strong>Take Photo</strong> Opens the camera. Snap a logo, sketch, or part right at the machine.</div>
+              <div class="tip-copy" data-tip-id="h-choose"><strong>Choose Photo</strong> Pick from your library. Same path as camera after that.</div>
+              <div class="tip-copy" data-tip-id="h-recent"><strong>Recents</strong> Tap a card to reopen that job — image, settings, and last G-code.</div>
+              <div class="tip-copy" data-tip-id="h-del"><strong>Delete ×</strong> Removes that recent only. Does not touch your camera roll.</div>
+            </div>
           </figure>
-          <figure class="shot">
-            <img src="assets/shots/02-home-ready.jpg" width="390" height="844" alt="Home with loaded image and Edit, CNC Settings, Generate buttons" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Photo loaded</strong>
-              Your image sits in the middle. Edit the look, set the machine, or jump straight to Generate.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/02-home-ready.jpg" width="390" height="844" alt="Home with loaded image and action buttons" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:88%;top:5%" data-tip-id="r-new" aria-label="New">1</button>
+              <button type="button" class="hotspot" style="left:82%;top:42%" data-tip-id="r-gear" aria-label="Quick settings">2</button>
+              <button type="button" class="hotspot" style="left:22%;top:78%" data-tip-id="r-edit" aria-label="Edit">3</button>
+              <button type="button" class="hotspot" style="left:50%;top:78%" data-tip-id="r-cnc" aria-label="CNC Settings">4</button>
+              <button type="button" class="hotspot" style="left:78%;top:78%" data-tip-id="r-gen" aria-label="Generate">5</button>
+            </div>
+            <figcaption><strong>Photo loaded</strong> Image ready — edit, set the control, or generate.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="r-new">+</button>
+                <button type="button" class="chip" data-tip-id="r-gear">Gear on photo</button>
+                <button type="button" class="chip" data-tip-id="r-edit">Edit</button>
+                <button type="button" class="chip" data-tip-id="r-cnc">CNC Settings</button>
+                <button type="button" class="chip" data-tip-id="r-gen">Generate</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="r-new"><strong>+</strong> New job — swap this photo for another.</div>
+              <div class="tip-copy" data-tip-id="r-gear"><strong>Gear on photo</strong> Shortcut into CNC settings for this job.</div>
+              <div class="tip-copy" data-tip-id="r-edit"><strong>Edit</strong> Contrast, crop, invert, size, Contour / Sculpting — shape the cut look.</div>
+              <div class="tip-copy" data-tip-id="r-cnc"><strong>CNC Settings</strong> Control (Fanuc / Okuma / Siemens), units, offsets, tool bits.</div>
+              <div class="tip-copy" data-tip-id="r-gen"><strong>Generate</strong> Build G-code now and open the simulator.</div>
+            </div>
           </figure>
-          <figure class="shot">
-            <img src="assets/shots/03-edit-contour.jpg" width="390" height="844" alt="Edit screen Contour mode with green cut preview on Coca-Cola logo" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Edit · Contour</strong>
-              Green lines are the cut look. Dial contrast, crop, invert, size — then Generate G-code.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/03-edit-contour.jpg" width="390" height="844" alt="Edit Contour screen" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:8%;top:4%" data-tip-id="e-home" aria-label="Home">1</button>
+              <button type="button" class="hotspot" style="left:18%;top:4%" data-tip-id="e-sim" aria-label="Simulation">2</button>
+              <button type="button" class="hotspot" style="left:90%;top:4%" data-tip-id="e-done" aria-label="Done">3</button>
+              <button type="button" class="hotspot" style="left:14%;top:14%" data-tip-id="e-undo" aria-label="Undo Reset">4</button>
+              <button type="button" class="hotspot" style="left:50%;top:48%" data-tip-id="e-contrast" aria-label="Contrast">5</button>
+              <button type="button" class="hotspot" style="left:28%;top:58%" data-tip-id="e-crop" aria-label="Crop">6</button>
+              <button type="button" class="hotspot" style="left:50%;top:58%" data-tip-id="e-inv" aria-label="Invert">7</button>
+              <button type="button" class="hotspot" style="left:72%;top:58%" data-tip-id="e-ad" aria-label="Adaptive">8</button>
+              <button type="button" class="hotspot" style="left:35%;top:66%" data-tip-id="e-mode" aria-label="Sculpting Contour">9</button>
+              <button type="button" class="hotspot" style="left:50%;top:76%" data-tip-id="e-size" aria-label="Size">10</button>
+              <button type="button" class="hotspot" style="left:50%;top:92%" data-tip-id="e-gen" aria-label="Generate G-code">11</button>
+            </div>
+            <figcaption><strong>Edit · Contour</strong> Green = cut look. Tune, then generate.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="e-home">Home</button>
+                <button type="button" class="chip" data-tip-id="e-sim">Simulation</button>
+                <button type="button" class="chip" data-tip-id="e-done">Done</button>
+                <button type="button" class="chip" data-tip-id="e-undo">Undo / Reset</button>
+                <button type="button" class="chip" data-tip-id="e-contrast">Contrast + Auto</button>
+                <button type="button" class="chip" data-tip-id="e-crop">Crop</button>
+                <button type="button" class="chip" data-tip-id="e-inv">Invert</button>
+                <button type="button" class="chip" data-tip-id="e-ad">Adaptive</button>
+                <button type="button" class="chip" data-tip-id="e-mode">Sculpting / Contour</button>
+                <button type="button" class="chip" data-tip-id="e-size">Size + camera</button>
+                <button type="button" class="chip" data-tip-id="e-gen">Generate G-code</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="e-home"><strong>Home</strong> Back to the main screen. Your edits stay in the project.</div>
+              <div class="tip-copy" data-tip-id="e-sim"><strong>Simulation</strong> Jump to the last G-code preview (dim if none yet).</div>
+              <div class="tip-copy" data-tip-id="e-done"><strong>Done</strong> Leave Edit and keep the current prep.</div>
+              <div class="tip-copy" data-tip-id="e-undo"><strong>Undo / Reset</strong> Step back one change, or wipe edits on this photo.</div>
+              <div class="tip-copy" data-tip-id="e-contrast"><strong>Contrast + Auto</strong> Separate ink from background. Auto picks a solid starting point.</div>
+              <div class="tip-copy" data-tip-id="e-crop"><strong>Crop</strong> Frame the job. Rotate 90° or straighten a few degrees.</div>
+              <div class="tip-copy" data-tip-id="e-inv"><strong>Invert</strong> Flip light and dark — useful when the logo is the wrong polarity.</div>
+              <div class="tip-copy" data-tip-id="e-ad"><strong>Adaptive</strong> Toggle local thresholding. On = smarter edges; off = previous look.</div>
+              <div class="tip-copy" data-tip-id="e-mode"><strong>Sculpting / Contour</strong> Relief carve vs outline trace. Switch anytime and regenerate.</div>
+              <div class="tip-copy" data-tip-id="e-size"><strong>Size + camera</strong> Real width/height (keep aspect). Camera helps match a physical part.</div>
+              <div class="tip-copy" data-tip-id="e-gen"><strong>Generate G-code</strong> Build the program and open the path simulator.</div>
+            </div>
           </figure>
-          <figure class="shot">
-            <img src="assets/shots/06-cnc-settings.png" width="390" height="844" alt="CNC Settings with Fanuc controller and inch units" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>CNC Settings</strong>
-              Pick Fanuc, Okuma, or Siemens. Units, file name, work offset — then generate for that control.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/06-cnc-settings.png" width="390" height="844" alt="CNC Settings screen" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:8%;top:4%" data-tip-id="c-home" aria-label="Home">1</button>
+              <button type="button" class="hotspot" style="left:18%;top:4%" data-tip-id="c-sim" aria-label="Simulation">2</button>
+              <button type="button" class="hotspot" style="left:50%;top:52%" data-tip-id="c-ctrl" aria-label="Controller">3</button>
+              <button type="button" class="hotspot" style="left:50%;top:60%" data-tip-id="c-unit" aria-label="Units">4</button>
+              <button type="button" class="hotspot" style="left:50%;top:70%" data-tip-id="c-file" aria-label="File and offset">5</button>
+              <button type="button" class="hotspot" style="left:50%;top:92%" data-tip-id="c-gen" aria-label="Generate">6</button>
+            </div>
+            <figcaption><strong>CNC Settings</strong> Match the file to your control.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="c-home">Home</button>
+                <button type="button" class="chip" data-tip-id="c-sim">Simulation</button>
+                <button type="button" class="chip" data-tip-id="c-ctrl">Fanuc / Okuma / Siemens</button>
+                <button type="button" class="chip" data-tip-id="c-unit">mm / inch</button>
+                <button type="button" class="chip" data-tip-id="c-file">File · Offset · Tool</button>
+                <button type="button" class="chip" data-tip-id="c-gen">Generate G-code</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="c-home"><strong>Home</strong> Return to the main screen.</div>
+              <div class="tip-copy" data-tip-id="c-sim"><strong>Simulation</strong> Open the last preview without regenerating.</div>
+              <div class="tip-copy" data-tip-id="c-ctrl"><strong>Fanuc / Okuma / Siemens</strong> Dialect for your control — headers and format follow this pick.</div>
+              <div class="tip-copy" data-tip-id="c-unit"><strong>mm / inch</strong> Coordinates and sizes in the unit you run on the floor.</div>
+              <div class="tip-copy" data-tip-id="c-file"><strong>File · Offset · Tool</strong> Output name, work offset (e.g. G54 · Center), and tool / feed summary.</div>
+              <div class="tip-copy" data-tip-id="c-gen"><strong>Generate G-code</strong> Write the file with these settings and open the sim.</div>
+            </div>
           </figure>
-          <figure class="shot">
-            <img src="assets/shots/04-sim-preview.jpg" width="390" height="844" alt="G-code simulator at 100 percent with speed presets" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>G-code preview</strong>
-              Watch the path before you cut. Play, reset, hide rapids, pick speed — share when you trust it.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/04-sim-preview.jpg" width="390" height="844" alt="G-code simulator" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:8%;top:4%" data-tip-id="s-home" aria-label="Home">1</button>
+              <button type="button" class="hotspot" style="left:50%;top:48%" data-tip-id="s-slide" aria-label="Progress">2</button>
+              <button type="button" class="hotspot" style="left:22%;top:56%" data-tip-id="s-reset" aria-label="Reset">3</button>
+              <button type="button" class="hotspot" style="left:40%;top:56%" data-tip-id="s-play" aria-label="Play">4</button>
+              <button type="button" class="hotspot" style="left:58%;top:56%" data-tip-id="s-all" aria-label="Show all">5</button>
+              <button type="button" class="hotspot" style="left:76%;top:56%" data-tip-id="s-rap" aria-label="Rapids">6</button>
+              <button type="button" class="hotspot" style="left:50%;top:66%" data-tip-id="s-spd" aria-label="Speed">7</button>
+              <button type="button" class="hotspot" style="left:28%;top:78%" data-tip-id="s-edit" aria-label="Edit">8</button>
+              <button type="button" class="hotspot" style="left:72%;top:78%" data-tip-id="s-cnc" aria-label="CNC">9</button>
+              <button type="button" class="hotspot" style="left:30%;top:88%" data-tip-id="s-share" aria-label="Share">10</button>
+              <button type="button" class="hotspot" style="left:70%;top:88%" data-tip-id="s-gen" aria-label="Generate">11</button>
+            </div>
+            <figcaption><strong>G-code preview</strong> Watch the path before metal meets tool.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="s-home">Home</button>
+                <button type="button" class="chip" data-tip-id="s-slide">Progress</button>
+                <button type="button" class="chip" data-tip-id="s-reset">Reset</button>
+                <button type="button" class="chip" data-tip-id="s-play">Play</button>
+                <button type="button" class="chip" data-tip-id="s-all">Show all</button>
+                <button type="button" class="chip" data-tip-id="s-rap">Rapids Off</button>
+                <button type="button" class="chip" data-tip-id="s-spd">0.5×–5×</button>
+                <button type="button" class="chip" data-tip-id="s-edit">Edit</button>
+                <button type="button" class="chip" data-tip-id="s-cnc">CNC Settings</button>
+                <button type="button" class="chip" data-tip-id="s-share">Share</button>
+                <button type="button" class="chip" data-tip-id="s-gen">Generate</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="s-home"><strong>Home</strong> Leave the simulator for the main screen.</div>
+              <div class="tip-copy" data-tip-id="s-slide"><strong>Progress</strong> Scrub through the program. Orange dot = tool tip now.</div>
+              <div class="tip-copy" data-tip-id="s-reset"><strong>Reset</strong> Jump back to the first move.</div>
+              <div class="tip-copy" data-tip-id="s-play"><strong>Play</strong> Run the path in G-code order so you see how it actually cuts.</div>
+              <div class="tip-copy" data-tip-id="s-all"><strong>Show all</strong> Draw the full path at once — good for a quick shape check.</div>
+              <div class="tip-copy" data-tip-id="s-rap"><strong>Rapids Off</strong> Hide non-cutting moves so only the cut stays on screen.</div>
+              <div class="tip-copy" data-tip-id="s-spd"><strong>0.5× / 1× / 2× / 5×</strong> Playback speed. Study slow, skim fast.</div>
+              <div class="tip-copy" data-tip-id="s-edit"><strong>Edit</strong> Tweak the image prep, then generate again.</div>
+              <div class="tip-copy" data-tip-id="s-cnc"><strong>CNC Settings</strong> Change control / units / offsets and regenerate.</div>
+              <div class="tip-copy" data-tip-id="s-share"><strong>Share</strong> Send the file when you are ready — Files, Drive, AirDrop, email…</div>
+              <div class="tip-copy" data-tip-id="s-gen"><strong>Generate</strong> Rebuild G-code with the current Edit + CNC settings.</div>
+            </div>
           </figure>
-          <figure class="shot">
-            <img src="assets/shots/05-sim-play.jpg" width="390" height="844" alt="G-code simulator with longer job and 0.5x 1x 2x 5x speeds" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Bigger jobs</strong>
-              Same simulator for longer programs. Speeds 0.5×–5× so you can skim or study the path.
-            </figcaption>
+
+          <figure class="shot" data-interactive>
+            <div class="shot-stage">
+              <img src="assets/shots/05-sim-play.jpg" width="390" height="844" alt="Longer G-code simulation" loading="lazy" decoding="async" />
+              <button type="button" class="hotspot" style="left:50%;top:66%" data-tip-id="b-spd" aria-label="Speed">1</button>
+              <button type="button" class="hotspot" style="left:50%;top:48%" data-tip-id="b-prog" aria-label="Lines">2</button>
+              <button type="button" class="hotspot" style="left:50%;top:74%" data-tip-id="b-meta" aria-label="File info">3</button>
+              <button type="button" class="hotspot" style="left:30%;top:88%" data-tip-id="b-share" aria-label="Share">4</button>
+            </div>
+            <figcaption><strong>Bigger jobs</strong> Same tools — longer programs, same trust check.</figcaption>
+            <div class="shot-tools">
+              <button type="button" class="tour-btn" data-tour>Play tip tour</button>
+              <div class="tip-chips">
+                <button type="button" class="chip" data-tip-id="b-spd">Speed presets</button>
+                <button type="button" class="chip" data-tip-id="b-prog">Line counter</button>
+                <button type="button" class="chip" data-tip-id="b-meta">File · size · time</button>
+                <button type="button" class="chip" data-tip-id="b-share">Share</button>
+              </div>
+              <div class="tip-panel" aria-live="polite"></div>
+            </div>
+            <div class="tip-bank" hidden>
+              <div class="tip-copy" data-tip-id="b-spd"><strong>Speed presets</strong> On long jobs, 5× skims the whole path; 0.5× zooms in on a risky corner.</div>
+              <div class="tip-copy" data-tip-id="b-prog"><strong>Line counter</strong> e.g. 2618/2618 — you finished the preview. Drag the slider to any line.</div>
+              <div class="tip-copy" data-tip-id="b-meta"><strong>File · size · time</strong> Name, bytes, and a rough run-time estimate before you walk to the machine.</div>
+              <div class="tip-copy" data-tip-id="b-share"><strong>Share</strong> Only leaves the phone when you tap Share and pick a destination.</div>
+            </div>
           </figure>
+
         </div>
+        <p class="note tip-note">Want real screen recordings later? We can drop short looping clips in these cards — tip tours work offline with no video files.</p>
       </section>
 
       <section class="wrap section" aria-labelledby="modes-heading">
