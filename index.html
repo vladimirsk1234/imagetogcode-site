@@ -187,142 +187,107 @@
         <div class="shots">
 
           <figure class="shot">
-            <img src="assets/shots/01-home.jpg" width="390" height="844" alt="Home screen with Take Photo, Choose Photo, and Recents" loading="lazy" decoding="async" />
+            <img src="assets/shots/01-home-sample.jpg" width="1290" height="2643" alt="Home with the Make your iMage sample loaded, a Recents card, and Edit, CNC Settings, and Generate" loading="lazy" decoding="async" />
             <figcaption>
               <strong>Home</strong>
-              Start here: new photo or a past job.
+              Start from a photo or the sample job. Recents keeps the work editable.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Settings (gear)</dt><dd>App options. Not the everyday CNC knobs.</dd></div>
-              <div><dt>Simulation</dt><dd>Open the last G-code preview.</dd></div>
-              <div><dt>Take Photo</dt><dd>Open the camera and snap a logo, sketch, or part.</dd></div>
-              <div><dt>Choose Photo</dt><dd>Pick from your library.</dd></div>
-              <div><dt>Recents</dt><dd>Tap a card to reopen that job.</dd></div>
+              <div><dt>Add (+)</dt><dd>Start from a new photo.</dd></div>
+              <div><dt>Sample</dt><dd>Make your iMage is loaded and ready to cut.</dd></div>
+              <div><dt>Recents</dt><dd>Tap the card to reopen that job. The label shows it already has G-code.</dd></div>
               <div><dt>Delete ×</dt><dd>Remove that recent only — not your camera roll.</dd></div>
-            </dl>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/shots/02-home-ready.jpg" width="390" height="844" alt="Home with loaded image and Edit, CNC Settings, Generate" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Photo loaded</strong>
-              Image ready — edit, set the machine, or generate.
-            </figcaption>
-            <dl class="keylist">
-              <div><dt>Simulation</dt><dd>Open the last G-code preview.</dd></div>
-              <div><dt>Gear on photo</dt><dd>Shortcut into CNC settings for this job.</dd></div>
-              <div><dt>Edit</dt><dd>Contrast, crop, invert, size, Contour or Sculpting.</dd></div>
-              <div><dt>CNC Settings</dt><dd>Control type, units, offsets, tool setup.</dd></div>
+              <div><dt>Edit</dt><dd>Crop, contrast, mode, and size.</dd></div>
+              <div><dt>CNC Settings</dt><dd>Controller, units, offset, and tool.</dd></div>
               <div><dt>Generate</dt><dd>Build G-code and open the path preview.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/03-edit-contour.jpg" width="390" height="844" alt="Edit Contour screen with green cut preview" loading="lazy" decoding="async" />
+            <img src="assets/shots/02-size-camera-reference.jpg" width="1290" height="2648" alt="Size with Camera reference: Card, long edge, 85.60 mm, and Mark ends" loading="lazy" decoding="async" />
             <figcaption>
-              <strong>Edit · Contour</strong>
-              Green lines are the cut look.
+              <strong>Size with Camera</strong>
+              Calibrate with a card or ruler so width and height match the workpiece in millimetres.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Home</dt><dd>Back to main. Edits stay in the project.</dd></div>
-              <div><dt>Simulation</dt><dd>Open the last G-code preview (dim if none).</dd></div>
+              <div><dt>Card / Ruler / Custom</dt><dd>A length you already know. Card is selected.</dd></div>
+              <div><dt>Long / Short edge</dt><dd>Which side of the card you measure.</dd></div>
+              <div><dt>85.60 mm</dt><dd>Known length for the long edge of a card.</dd></div>
+              <div><dt>Mark ends</dt><dd>Tap the two ends of that length. Keep the reference on the same plane as the part.</dd></div>
+              <div><dt>Cancel</dt><dd>Leave without changing the size.</dd></div>
+            </dl>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/shots/03-edit.jpg" width="1290" height="2646" alt="Edit screen with contrast, crop, Sculpting selected, width and height, and Size with camera" loading="lazy" decoding="async" />
+            <figcaption>
+              <strong>Edit</strong>
+              Crop, rotate, contrast, and set size before you cut.
+            </figcaption>
+            <dl class="keylist">
               <div><dt>Done</dt><dd>Leave Edit and keep this prep.</dd></div>
               <div><dt>Undo / Reset</dt><dd>Step back one change, or wipe edits on this photo.</dd></div>
-              <div><dt>Contrast + Auto</dt><dd>Separate ink from background; Auto picks a start.</dd></div>
-              <div><dt>Crop</dt><dd>Frame the job; rotate 90° or straighten a little.</dd></div>
+              <div><dt>Contrast + Auto</dt><dd>Separate ink from background. Auto picks a start. Preview is the cut look.</dd></div>
+              <div><dt>Crop</dt><dd>Frame the job, and rotate it if the photo sits sideways.</dd></div>
               <div><dt>Invert</dt><dd>Flip light and dark.</dd></div>
-              <div><dt>Adaptive</dt><dd>On = smarter local edges; off = previous look.</dd></div>
-              <div><dt>Sculpting / Contour</dt><dd>Relief carve vs outline trace.</dd></div>
-              <div><dt>Size with Camera</dt><dd>Real millimetres: calibrate with a known reference (credit card or ruler) and an overlay on the workpiece. Width and height can still be typed by hand.</dd></div>
+              <div><dt>Adaptive</dt><dd>On for local edges; off for the plain look.</dd></div>
+              <div><dt>Sculpting / Contour</dt><dd>Relief carve, or an outline trace. Sculpting is selected.</dd></div>
+              <div><dt>Keep aspect ratio</dt><dd>Height follows width.</dd></div>
+              <div><dt>W / H</dt><dd>Width and height in millimetres. Here, 10 mm by 47.1 mm.</dd></div>
+              <div><dt>Size with camera</dt><dd>Set those millimetres from a card or ruler.</dd></div>
               <div><dt>Generate G-code</dt><dd>Build the program and open the simulator.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/07-size-cam-reference.jpg" width="390" height="845" alt="Size with Camera reference sheet for Card, Ruler, or marking the ends" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Size · Reference</strong>
-              Pick Card or Ruler — a length you already know.
-            </figcaption>
-            <dl class="keylist">
-              <div><dt>Card / Ruler</dt><dd>A credit card or a ruler in the frame.</dd></div>
-              <div><dt>Mark ends</dt><dd>Next step: tap the two ends of that length.</dd></div>
-            </dl>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/shots/08-size-cam-known-length.jpg" width="390" height="845" alt="Two points marked on a credit card, then Use length" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Size · Known length</strong>
-              Mark both ends, then use that length.
-            </figcaption>
-            <dl class="keylist">
-              <div><dt>Points 1 and 2</dt><dd>The two ends of the card or ruler.</dd></div>
-              <div><dt>Use length</dt><dd>That span becomes real millimetres.</dd></div>
-            </dl>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/shots/09-size-cam-overlay.jpg" width="390" height="845" alt="Workpiece size overlay with width, height, and Done" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Size · Overlay</strong>
-              Line the job up on the stock, then Done.
-            </figcaption>
-            <dl class="keylist">
-              <div><dt>Overlay</dt><dd>The frame sits on the workpiece so you see the real size.</dd></div>
-              <div><dt>Width / Height</dt><dd>Still type them by hand if you already know the numbers.</dd></div>
-              <div><dt>Done</dt><dd>Keep this size and go back.</dd></div>
-            </dl>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/shots/06-cnc-settings.png" width="390" height="844" alt="CNC Settings with Fanuc and inch selected" loading="lazy" decoding="async" />
+            <img src="assets/shots/04-cnc-settings.jpg" width="1240" height="2666" alt="CNC Settings with Fanuc, millimetres, file name, G54 center work offset, and machining parameters" loading="lazy" decoding="async" />
             <figcaption>
               <strong>CNC Settings</strong>
-              Match the file to your control.
+              Pick controller, units, work offset (WCS), and machining parameters.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Home</dt><dd>Return to the main screen.</dd></div>
-              <div><dt>Simulation</dt><dd>Open the last preview without regenerating.</dd></div>
-              <div><dt>Fanuc / Okuma / Siemens</dt><dd>Dialect for your machine.</dd></div>
-              <div><dt>mm / inch</dt><dd>Units for sizes and coordinates.</dd></div>
-              <div><dt>File · Offset · Tool</dt><dd>Output name, work offset (e.g. G54), tool/feed summary.</dd></div>
+              <div><dt>Fanuc / Okuma / Siemens</dt><dd>Dialect for your machine. Fanuc is selected.</dd></div>
+              <div><dt>mm / inch</dt><dd>Units for sizes and coordinates. Millimetres are selected.</dd></div>
+              <div><dt>File name</dt><dd>Output name. Here, G-code.TXT.</dd></div>
+              <div><dt>Work Offset</dt><dd>Work coordinate system. Here, G54 · Center.</dd></div>
+              <div><dt>Machining parameters</dt><dd>Tool and feed summary. Here, T1.</dd></div>
+              <div><dt>Summary</dt><dd>Fanuc · mm · 102.5 × 47.1 · G54 — the file you are about to write.</dd></div>
               <div><dt>Generate G-code</dt><dd>Write the file with these settings.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/04-sim-preview.jpg" width="390" height="844" alt="G-code simulator with playback controls" loading="lazy" decoding="async" />
+            <img src="assets/shots/05-gcode-sim-sculpt.jpg" width="1290" height="2669" alt="G-code simulation of a dense sculpting toolpath for Make your iMage, at 4826 of 4826 lines" loading="lazy" decoding="async" />
             <figcaption>
-              <strong>G-code preview</strong>
-              Watch the path before you cut.
+              <strong>Simulation</strong>
+              Play the toolpath and check the cut before you share the file.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Home</dt><dd>Leave the simulator.</dd></div>
-              <div><dt>Progress</dt><dd>Scrub the program; orange dot = tool now.</dd></div>
+              <div><dt>Sculpting path</dt><dd>A dense fill of the letters. The orange dot is the tool.</dd></div>
+              <div><dt>Progress</dt><dd>Scrub the program. This job is at 4826/4826.</dd></div>
               <div><dt>Reset</dt><dd>Jump to the first move.</dd></div>
               <div><dt>Play</dt><dd>Run the path in G-code order.</dd></div>
               <div><dt>Show all</dt><dd>Draw the full path at once.</dd></div>
               <div><dt>Rapids Off</dt><dd>Hide non-cutting moves.</dd></div>
               <div><dt>0.5× / 1× / 2× / 5×</dt><dd>Playback speed — study slow, skim fast.</dd></div>
-              <div><dt>Edit</dt><dd>Tweak the image, then generate again.</dd></div>
-              <div><dt>CNC Settings</dt><dd>Change control/units/offsets and regenerate.</dd></div>
+              <div><dt>File · size · time</dt><dd>G-code.TXT · 115 KB · 4m 18s.</dd></div>
+              <div><dt>Edit / CNC Settings</dt><dd>Change the job, then generate again.</dd></div>
               <div><dt>Share</dt><dd>Send the file only when you choose where.</dd></div>
-              <div><dt>Generate</dt><dd>Rebuild G-code with current settings.</dd></div>
+              <div><dt>Generate</dt><dd>Rebuild G-code with the current settings.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/05-sim-play.jpg" width="390" height="844" alt="Longer G-code job in the simulator" loading="lazy" decoding="async" />
+            <img src="assets/shots/06-gcode-sim-contour.jpg" width="1290" height="2796" alt="G-code simulation of a lighter contour toolpath for Make your iMage, at 387 of 387 lines" loading="lazy" decoding="async" />
             <figcaption>
-              <strong>Bigger jobs</strong>
-              Same controls — longer programs.
+              <strong>Simulation · Contour</strong>
+              Same G-code screen, with a lighter outline path.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Speed presets</dt><dd>5× skims a long path; 0.5× checks a tight corner.</dd></div>
-              <div><dt>Line counter</dt><dd>e.g. 2618/2618 — where you are in the file.</dd></div>
-              <div><dt>File · size · time</dt><dd>Name, bytes, rough run-time before the machine.</dd></div>
-              <div><dt>Share</dt><dd>Leaves the phone only after you tap Share.</dd></div>
+              <div><dt>Outline</dt><dd>Contour follows the letter edges instead of filling them.</dd></div>
+              <div><dt>Line counter</dt><dd>387/387 — a shorter program than the sculpt.</dd></div>
+              <div><dt>File · size · time</dt><dd>G-code.TXT · 8.7 KB · 22s.</dd></div>
+              <div><dt>Same controls</dt><dd>Reset, Play, Show all, Rapids, speed, then Share.</dd></div>
             </dl>
           </figure>
 
