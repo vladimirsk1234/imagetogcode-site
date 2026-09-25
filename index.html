@@ -25,7 +25,7 @@
     <meta name="theme-color" content="#0a0b0d" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=plain1" />
+    <link rel="stylesheet" href="styles.css?v=plain2" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,11 +33,11 @@
         {
           "@type": "MobileApplication",
           "name": "iMage-to-Gcode",
-          "alternateName": ["iMAGEtoGcode", "Image to G-code"],
+          "alternateName": ["iMg2Gcode", "iMAGEtoGcode", "Image to G-code"],
           "url": "https://vladimirsk1234.github.io/imagetogcode-site/",
           "description": "Turn a photo into CNC G-code on your phone. Prepare the image, generate a toolpath, preview the cut, and share the file. Work stays on your device.",
           "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "iOS, Android",
+          "operatingSystem": "iOS",
           "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
           "author": {"@type": "Person", "name": "Vladimir Skliar"},
           "email": "iMagetoGcode@Gmail.com",
@@ -86,7 +86,7 @@
           <img src="assets/logo.png" width="36" height="36" alt="iMage-to-Gcode logo" />
           <span class="brand-name">
             <strong>iMage-to-Gcode</strong>
-            <span>Photo to CNC G-code</span>
+            <span>iMg2Gcode · Photo to CNC G-code</span>
           </span>
         </a>
         <nav class="nav" aria-label="Primary">
@@ -103,12 +103,13 @@
           <p class="kicker">CNC · Photo · G-code</p>
           <h1>Photo in. Toolpath out.</h1>
           <p class="lede">
-            iMage-to-Gcode turns a picture into CNC G-code on your phone — prepare the
-            image, generate the path, preview the cut, then share the file. Built for
-            shops and makers who want a fast, private workflow.
+            iMage-to-Gcode turns a picture into CNC G-code on your iPhone — prepare the
+            image, generate the path, preview the cut, then share the file. A shop utility
+            for hobby makers, with the job kept on the device.
           </p>
           <div class="actions">
-            <a class="btn btn-primary" href="privacy.html">Privacy Policy</a>
+            <span class="btn btn-primary is-disabled">App Store — Coming soon</span>
+            <a class="btn btn-ghost" href="privacy.html">Privacy Policy</a>
             <a class="btn btn-ghost" href="support.html">Get support</a>
           </div>
         </div>
@@ -119,7 +120,7 @@
               src="assets/app-icon-256.png"
               width="512"
               height="512"
-              alt="iMage-to-Gcode app icon showing CNC engraving from a photo"
+              alt="iMage-to-Gcode app icon: photo frame, blue contour toolpath, and milling bit"
             />
           </picture>
           <span class="stamp">On your device</span>
@@ -166,8 +167,8 @@
               Start here: new photo or a past job.
             </figcaption>
             <dl class="keylist">
-              <div><dt>+</dt><dd>New job — clear the workspace for another photo.</dd></div>
               <div><dt>Settings (gear)</dt><dd>App options. Not the everyday CNC knobs.</dd></div>
+              <div><dt>Play</dt><dd>Open the last G-code preview.</dd></div>
               <div><dt>Take Photo</dt><dd>Open the camera and snap a logo, sketch, or part.</dd></div>
               <div><dt>Choose Photo</dt><dd>Pick from your library.</dd></div>
               <div><dt>Recents</dt><dd>Tap a card to reopen that job.</dd></div>
@@ -182,7 +183,7 @@
               Image ready — edit, set the machine, or generate.
             </figcaption>
             <dl class="keylist">
-              <div><dt>+</dt><dd>Start another job with a new photo.</dd></div>
+              <div><dt>Play</dt><dd>Open the last G-code preview.</dd></div>
               <div><dt>Gear on photo</dt><dd>Shortcut into CNC settings for this job.</dd></div>
               <div><dt>Edit</dt><dd>Contrast, crop, invert, size, Contour or Sculpting.</dd></div>
               <div><dt>CNC Settings</dt><dd>Control type, units, offsets, tool setup.</dd></div>
@@ -206,7 +207,7 @@
               <div><dt>Invert</dt><dd>Flip light and dark.</dd></div>
               <div><dt>Adaptive</dt><dd>On = smarter local edges; off = previous look.</dd></div>
               <div><dt>Sculpting / Contour</dt><dd>Relief carve vs outline trace.</dd></div>
-              <div><dt>Size + camera</dt><dd>Real W/H (keep aspect); camera helps match a part.</dd></div>
+              <div><dt>Size with Camera</dt><dd>Real millimetres: calibrate with a known reference (credit card or ruler) and an overlay on the workpiece. Width and height can still be typed by hand.</dd></div>
               <div><dt>Generate G-code</dt><dd>Build the program and open the simulator.</dd></div>
             </dl>
           </figure>
@@ -287,7 +288,7 @@
         <div class="features">
           <article class="feature">
             <h3>Private by design</h3>
-            <p>Photos and projects stay on your device. Nothing uploads unless you Share.</p>
+            <p>Photos, projects, and G-code stay on your device. A file leaves only when you Share. Ads may use a device advertising ID — see the Privacy Policy.</p>
           </article>
           <article class="feature">
             <h3>Recents on hand</h3>
