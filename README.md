@@ -1,6 +1,6 @@
 # iMage-to-Gcode — public store site
 
-Short marketing + legal pages for Apple App Store and Google Play.
+Short marketing + legal pages for the iOS app on the App Store. An Android version may come later.
 
 **Live**
 - https://vladimirsk1234.github.io/imagetogcode-site/

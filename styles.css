@@ -269,6 +269,17 @@ h1 {
   filter: brightness(1.06);
 }
 
+.btn.is-disabled {
+  opacity: 0.62;
+  cursor: default;
+  user-select: none;
+}
+
+.btn-primary.is-disabled:hover {
+  color: #16120a;
+  filter: none;
+}
+
 .btn-ghost {
   color: var(--ink);
   border: 1px solid var(--line);
