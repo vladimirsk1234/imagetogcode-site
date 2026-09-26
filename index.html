@@ -187,24 +187,22 @@
         <div class="shots">
 
           <figure class="shot">
-            <img src="assets/shots/01-home-sample.jpg" width="1290" height="2643" alt="Home with the Make your iMage sample loaded, a Recents card, and Edit, CNC Settings, and Generate" loading="lazy" decoding="async" />
+            <img src="assets/shots/01-home-recents.jpg" width="1289" height="2650" alt="Home screen with Take Photo, Choose Photo, and Recents cards for Coca-Cola, LEGO, and portrait jobs" loading="lazy" decoding="async" />
             <figcaption>
               <strong>Home</strong>
-              Start from a photo or the sample job. Recents keeps the work editable.
+              Take or choose a photo. Recents keeps past jobs ready to reopen.
             </figcaption>
             <dl class="keylist">
               <div><dt>Add (+)</dt><dd>Start from a new photo.</dd></div>
-              <div><dt>Sample</dt><dd>Make your iMage is loaded and ready to cut.</dd></div>
-              <div><dt>Recents</dt><dd>Tap the card to reopen that job. The label shows it already has G-code.</dd></div>
+              <div><dt>Take Photo</dt><dd>Capture with the camera.</dd></div>
+              <div><dt>Choose Photo</dt><dd>Pick from your library.</dd></div>
+              <div><dt>Recents</dt><dd>Tap a card to reopen that job.</dd></div>
               <div><dt>Delete ×</dt><dd>Remove that recent only — not your camera roll.</dd></div>
-              <div><dt>Edit</dt><dd>Crop, contrast, mode, and size.</dd></div>
-              <div><dt>CNC Settings</dt><dd>Controller, units, offset, and tool.</dd></div>
-              <div><dt>Generate</dt><dd>Build G-code and open the path preview.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/02-size-camera-reference.jpg" width="1290" height="2648" alt="Size with Camera reference: Card, long edge, 85.60 mm, and Mark ends" loading="lazy" decoding="async" />
+            <img src="assets/shots/02-size-camera-reference.jpg" width="1290" height="2633" alt="Size with Camera reference sheet: Card, long edge, 85.60 mm, and Mark ends" loading="lazy" decoding="async" />
             <figcaption>
               <strong>Size with Camera</strong>
               Calibrate with a card or ruler so width and height match the workpiece in millimetres.
@@ -219,28 +217,41 @@
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/03-edit.jpg" width="1290" height="2646" alt="Edit screen with contrast, crop, Sculpting selected, width and height, and Size with camera" loading="lazy" decoding="async" />
+            <img src="assets/shots/03-edit-contour.jpg" width="1290" height="2513" alt="Edit screen with Contour selected on a Coca-Cola logo, green outline preview, and 50 by 20 mm size" loading="lazy" decoding="async" />
             <figcaption>
-              <strong>Edit</strong>
-              Crop, rotate, contrast, and set size before you cut.
+              <strong>Edit · Contour</strong>
+              Trace the outlines. Preview shows the cut look before you generate.
             </figcaption>
             <dl class="keylist">
               <div><dt>Done</dt><dd>Leave Edit and keep this prep.</dd></div>
-              <div><dt>Undo / Reset</dt><dd>Step back one change, or wipe edits on this photo.</dd></div>
-              <div><dt>Contrast + Auto</dt><dd>Separate ink from background. Auto picks a start. Preview is the cut look.</dd></div>
-              <div><dt>Crop</dt><dd>Frame the job, and rotate it if the photo sits sideways.</dd></div>
-              <div><dt>Invert</dt><dd>Flip light and dark.</dd></div>
-              <div><dt>Adaptive</dt><dd>On for local edges; off for the plain look.</dd></div>
-              <div><dt>Sculpting / Contour</dt><dd>Relief carve, or an outline trace. Sculpting is selected.</dd></div>
+              <div><dt>Undo / Redo</dt><dd>Step back or forward one change.</dd></div>
+              <div><dt>Contrast + Auto</dt><dd>Separate ink from background. Auto picks a start.</dd></div>
+              <div><dt>Crop / Invert / Adaptive</dt><dd>Frame the job, flip light and dark, or use local edges.</dd></div>
+              <div><dt>Sculpting / Contour</dt><dd>Relief carve, or an outline trace. Contour is selected.</dd></div>
               <div><dt>Keep aspect ratio</dt><dd>Height follows width.</dd></div>
-              <div><dt>W / H</dt><dd>Width and height in millimetres. Here, 10 mm by 47.1 mm.</dd></div>
+              <div><dt>W / H</dt><dd>Width and height in millimetres. Here, 50 mm by 20 mm.</dd></div>
               <div><dt>Size with camera</dt><dd>Set those millimetres from a card or ruler.</dd></div>
               <div><dt>Generate G-code</dt><dd>Build the program and open the simulator.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/04-cnc-settings.jpg" width="1240" height="2666" alt="CNC Settings with Fanuc, millimetres, file name, G54 center work offset, and machining parameters" loading="lazy" decoding="async" />
+            <img src="assets/shots/04-edit-sculpt.jpg" width="1290" height="2650" alt="Edit screen with Sculpting selected on a Coca-Cola logo, grayscale cut preview, and 50 by 20 mm size" loading="lazy" decoding="async" />
+            <figcaption>
+              <strong>Edit · Sculpting</strong>
+              Carve the picture as a surface. Same prep tools, denser path.
+            </figcaption>
+            <dl class="keylist">
+              <div><dt>Preview</dt><dd>The grayscale fill is the cut look for a relief carve.</dd></div>
+              <div><dt>Sculpting / Contour</dt><dd>Switch modes anytime. Sculpting is selected.</dd></div>
+              <div><dt>W / H</dt><dd>Same millimetre size as Contour — here, 50 mm by 20 mm.</dd></div>
+              <div><dt>Size with camera</dt><dd>Calibrate from a known reference on the workpiece.</dd></div>
+              <div><dt>Generate G-code</dt><dd>Build the denser sculpt program.</dd></div>
+            </dl>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/shots/05-cnc-settings.jpg" width="1290" height="2653" alt="CNC Settings with Fanuc, millimetres, Coca-Cola.TXT, G54 top left, and Contour summary" loading="lazy" decoding="async" />
             <figcaption>
               <strong>CNC Settings</strong>
               Pick controller, units, work offset (WCS), and machining parameters.
@@ -248,46 +259,32 @@
             <dl class="keylist">
               <div><dt>Fanuc / Okuma / Siemens</dt><dd>Dialect for your machine. Fanuc is selected.</dd></div>
               <div><dt>mm / inch</dt><dd>Units for sizes and coordinates. Millimetres are selected.</dd></div>
-              <div><dt>File name</dt><dd>Output name. Here, G-code.TXT.</dd></div>
-              <div><dt>Work Offset</dt><dd>Work coordinate system. Here, G54 · Center.</dd></div>
+              <div><dt>File name</dt><dd>Output name. Here, Coca-Cola.TXT.</dd></div>
+              <div><dt>Work Offset</dt><dd>Work coordinate system. Here, G54 · Top left.</dd></div>
               <div><dt>Machining parameters</dt><dd>Tool and feed summary. Here, T1.</dd></div>
-              <div><dt>Summary</dt><dd>Fanuc · mm · 102.5 × 47.1 · G54 — the file you are about to write.</dd></div>
+              <div><dt>Summary</dt><dd>Fanuc · mm · 50.0 × 20.1 · G54 · Contour — the file you are about to write.</dd></div>
               <div><dt>Generate G-code</dt><dd>Write the file with these settings.</dd></div>
             </dl>
           </figure>
 
           <figure class="shot">
-            <img src="assets/shots/05-gcode-sim-sculpt.jpg" width="1290" height="2669" alt="G-code simulation of a dense sculpting toolpath for Make your iMage, at 4826 of 4826 lines" loading="lazy" decoding="async" />
+            <img src="assets/shots/06-gcode-sim.jpg" width="1290" height="2654" alt="G-code simulation of a Contour Coca-Cola toolpath at 371 of 371 lines" loading="lazy" decoding="async" />
             <figcaption>
               <strong>Simulation</strong>
               Play the toolpath and check the cut before you share the file.
             </figcaption>
             <dl class="keylist">
-              <div><dt>Sculpting path</dt><dd>A dense fill of the letters. The orange dot is the tool.</dd></div>
-              <div><dt>Progress</dt><dd>Scrub the program. This job is at 4826/4826.</dd></div>
+              <div><dt>Contour path</dt><dd>Green outline of the logo. The orange dot is the tool.</dd></div>
+              <div><dt>Progress</dt><dd>Scrub the program. This job is at 371/371.</dd></div>
               <div><dt>Reset</dt><dd>Jump to the first move.</dd></div>
               <div><dt>Play</dt><dd>Run the path in G-code order.</dd></div>
               <div><dt>Show all</dt><dd>Draw the full path at once.</dd></div>
               <div><dt>Rapids Off</dt><dd>Hide non-cutting moves.</dd></div>
               <div><dt>0.5× / 1× / 2× / 5×</dt><dd>Playback speed — study slow, skim fast.</dd></div>
-              <div><dt>File · size · time</dt><dd>G-code.TXT · 115 KB · 4m 18s.</dd></div>
+              <div><dt>File · size · time</dt><dd>Coca-Cola.TXT · 7.9 KB · 14s.</dd></div>
               <div><dt>Edit / CNC Settings</dt><dd>Change the job, then generate again.</dd></div>
               <div><dt>Share</dt><dd>Send the file only when you choose where.</dd></div>
               <div><dt>Generate</dt><dd>Rebuild G-code with the current settings.</dd></div>
-            </dl>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/shots/06-gcode-sim-contour.jpg" width="1290" height="2796" alt="G-code simulation of a lighter contour toolpath for Make your iMage, at 387 of 387 lines" loading="lazy" decoding="async" />
-            <figcaption>
-              <strong>Simulation · Contour</strong>
-              Same G-code screen, with a lighter outline path.
-            </figcaption>
-            <dl class="keylist">
-              <div><dt>Outline</dt><dd>Contour follows the letter edges instead of filling them.</dd></div>
-              <div><dt>Line counter</dt><dd>387/387 — a shorter program than the sculpt.</dd></div>
-              <div><dt>File · size · time</dt><dd>G-code.TXT · 8.7 KB · 22s.</dd></div>
-              <div><dt>Same controls</dt><dd>Reset, Play, Show all, Rapids, speed, then Share.</dd></div>
             </dl>
           </figure>
 
