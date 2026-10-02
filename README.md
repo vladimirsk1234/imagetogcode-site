@@ -12,7 +12,7 @@ Short marketing + legal pages for iMage-to-Gcode on Google Play (Android). An Ap
 - Google Play: https://play.google.com/store/apps/details?id=com.vladimirsk.imagetogcode
 - App Store: coming soon
 
-Support: vovka2600@gmail.com
+Support: imagetogcode@gmail.com
 
 Public website only — no application source code.
 
