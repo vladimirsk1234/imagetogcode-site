@@ -771,3 +771,26 @@ h1 {
     color: inherit;
   }
 }
+
+
+.store-actions {
+  align-items: center;
+}
+
+.store-badge {
+  display: inline-flex;
+  line-height: 0;
+  border-radius: 8px;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.store-badge:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.store-badge img {
+  display: block;
+  height: 54px;
+  width: auto;
+}
